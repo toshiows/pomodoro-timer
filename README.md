@@ -1,2 +1,2 @@
 # pomodoro-timer
-Pomodoro timer for study focus
+Pomodoro timer for focus on studies
