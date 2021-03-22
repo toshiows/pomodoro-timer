@@ -1,3 +1,11 @@
+.titulo-principal {
+    color: white;
+}
+
 body {
-    background-color: darkseagreen;
+    background-color: rgb(219, 82, 77);;
+}
+
+.titulo-input {
+    color: white;
 }
