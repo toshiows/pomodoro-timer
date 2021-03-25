@@ -1,13 +1,18 @@
 class Pomodoro {
     
-    private _atividade: string;
-    private _tempoCiclo: number;
-    private _tempoIntervalo: number;
+    constructor(private _atividade: string, private _tempoCiclo: number, private _tempoIntevalo: number) {
 
-    constructor(atividade: string, tempoCiclo: number, tempoIntevalo: number) {
+    }
 
-        this._atividade = atividade;
-        this._tempoCiclo = tempoCiclo;
-        this._tempoIntervalo = tempoIntevalo;
+    get atividade() {
+        return this._atividade;
+    }
+
+    get tempoCiclo() {
+        return this._tempoCiclo;
+    }
+
+    get tempoIntervalo() {
+        return this._tempoIntevalo;
     }
 }

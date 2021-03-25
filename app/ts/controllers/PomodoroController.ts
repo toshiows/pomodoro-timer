@@ -1,7 +1,7 @@
 class PomodoroController {
-    private _inputAtividade;
-    private _inputTempoCiclo;
-    private _inputTempoIntervalo;
+    private _inputAtividade: Element;
+    private _inputTempoCiclo: Element;
+    private _inputTempoIntervalo: Element;
 
     constructor() {
         this._inputAtividade = document.querySelector('#atividade');
@@ -9,7 +9,7 @@ class PomodoroController {
         this._inputTempoIntervalo = document.querySelector('#tempo-intervalo');
     }
 
-    adiciona(event) {
+    adiciona(event: Event) {
         event.preventDefault();
 
         const pomodoro = new Pomodoro(
@@ -20,4 +20,4 @@ class PomodoroController {
         
         console.log(pomodoro);
     }
-}
+}//2-8
