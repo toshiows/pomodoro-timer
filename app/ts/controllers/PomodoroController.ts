@@ -1,23 +1,33 @@
 class PomodoroController {
-    private _inputAtividade: Element;
-    private _inputTempoCiclo: Element;
-    private _inputTempoIntervalo: Element;
+    private _inputAtividade: HTMLInputElement;
+    private _inputTempoCiclo: HTMLInputElement;
+    private _inputTempoIntervalo: HTMLInputElement;
+    private _pomodoroList: PomodoroList = new PomodoroList();
+    private _pomodoroView: PomodoroView = new PomodoroView('#pomodoroView');
 
     constructor() {
-        this._inputAtividade = document.querySelector('#atividade');
-        this._inputTempoCiclo = document.querySelector('#tempo-ciclo');
-        this._inputTempoIntervalo = document.querySelector('#tempo-intervalo');
+        this._inputAtividade = <HTMLInputElement> document.querySelector('#atividade');
+        this._inputTempoCiclo = <HTMLInputElement> document.querySelector('#tempo-ciclo');
+        this._inputTempoIntervalo = <HTMLInputElement> document.querySelector('#tempo-intervalo');
+        this._pomodoroView.update(this._pomodoroList);
     }
 
-    adiciona(event: Event) {
+    adiciona(event: Event): void {
         event.preventDefault();
 
         const pomodoro = new Pomodoro(
-            this._inputAtividade,
-            this._inputTempoCiclo,
-            this._inputTempoIntervalo
+            this._inputAtividade.value,
+            parseInt(this._inputTempoCiclo.value),
+            parseInt(this._inputTempoIntervalo.value)
         );
         
-        console.log(pomodoro);
+        this._pomodoroList.adiciona(pomodoro);
+        this._pomodoroView.update(this._pomodoroList);
+
+        this._pomodoroList.toArray().forEach(pomodoro => {
+            console.log(pomodoro.atividade);
+            console.log(pomodoro.tempoCiclo);
+            console.log(pomodoro.tempoIntervalo);
+        });
     }
-}//2-8
+}//3
