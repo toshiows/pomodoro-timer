@@ -25,7 +25,7 @@ class PomodoroView {
                         <td>${pomodoro.tempoIntervalo}</td>
                     </tr>
                 `;
-        }).join()}
+        }).join('')}
         </tbody>
 
         <tfoot>
