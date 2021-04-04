@@ -3,24 +3,42 @@ class Contador {
         this._elemento = document.querySelector(seletor);
     }
     countdown(pomodoroList) {
-        let elementoPage = this._elemento;
         pomodoroList.toArray().forEach(pomodoro => {
-            let minutos = pomodoro.tempoCiclo;
-            let segundos = 0;
-            setInterval(function () {
-                if (segundos == 0) {
-                    segundos = 60;
-                    minutos--;
-                }
-                if (minutos < 0) {
-                    //doSomething();
-                }
-                segundos--;
-                //let seletor = document.querySelector("#contador");
-                elementoPage.innerHTML = `${minutos < 10 ? `0${minutos}` : `${minutos}`}:${segundos < 10 ? `0${segundos}` : `${segundos}`}`;
-            }, 1000);
+            this.countDownTask(pomodoro);
+            this.countDownInterval(pomodoro);
         });
-        // let minutos:number = this._contador;
-        //let segundos:number = 0;
+    }
+    countDownTask(pomodoro) {
+        let elementoPage = this._elemento;
+        let minutos = pomodoro.tempoCiclo;
+        let segundos = 0;
+        setInterval(function () {
+            if (segundos == 0) {
+                segundos = 60;
+                minutos--;
+            }
+            if (minutos < 0) {
+                return;
+            }
+            segundos--;
+            elementoPage.innerHTML = `${minutos < 10 ? `0${minutos}` : `${minutos}`}:${segundos < 10 ? `0${segundos}` : `${segundos}`}`;
+        }, 1000);
+    }
+    countDownInterval(pomodoro) {
+        let elementoPage = this._elemento;
+        alert("oi");
+        let minutos = pomodoro.tempoIntervalo;
+        let segundos = 0;
+        setInterval(function () {
+            if (segundos == 0) {
+                segundos = 60;
+                minutos--;
+            }
+            if (minutos < 0) {
+                return;
+            }
+            segundos--;
+            elementoPage.innerHTML = `${minutos < 10 ? `0${minutos}` : `${minutos}`}:${segundos < 10 ? `0${segundos}` : `${segundos}`}`;
+        }, 1000);
     }
 }
