@@ -7,7 +7,7 @@ class PomodoroView {
     }
     template(model) {
         return `
-        <table class="table table-hover table-bordered">
+        <table class="table table-sm table-dark">
         <thead>
             <tr>
                 <th>Atividade</th>

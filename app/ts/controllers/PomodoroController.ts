@@ -5,13 +5,14 @@ class PomodoroController {
     private _pomodoroList: PomodoroList = new PomodoroList();
     private _pomodoroView: PomodoroView = new PomodoroView('#pomodoroView');
     private _contador: Contador = new Contador("#contador");
+    private _tomato: Element;
 
     constructor() {
         this._inputAtividade = <HTMLInputElement> document.querySelector('#atividade');
         this._inputTempoCiclo = <HTMLInputElement> document.querySelector('#tempo-ciclo');
         this._inputTempoIntervalo = <HTMLInputElement> document.querySelector('#tempo-intervalo');
         this._pomodoroView.update(this._pomodoroList);
-        
+        this._tomato = document.querySelector("#menuTomato");
     }
 
     adiciona(event: Event): void {
@@ -35,6 +36,7 @@ class PomodoroController {
     }
 
     iniciar(): void {
+        this._tomato.classList.remove("invisivel");
         this._contador.countdown(this._pomodoroList);
     }
 }//3

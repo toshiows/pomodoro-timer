@@ -7,6 +7,7 @@ class PomodoroController {
         this._inputTempoCiclo = document.querySelector('#tempo-ciclo');
         this._inputTempoIntervalo = document.querySelector('#tempo-intervalo');
         this._pomodoroView.update(this._pomodoroList);
+        this._tomato = document.querySelector("#menuTomato");
     }
     adiciona(event) {
         event.preventDefault();
@@ -20,6 +21,7 @@ class PomodoroController {
         });
     }
     iniciar() {
+        this._tomato.classList.remove("invisivel");
         this._contador.countdown(this._pomodoroList);
     }
 } //3

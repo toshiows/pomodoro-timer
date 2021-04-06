@@ -3,13 +3,59 @@
 }
 
 body {
-    background-color: rgb(219, 82, 77);;
+    background-color: rgb(88, 173, 123);
 }
 
 .titulo-input {
     color: white;
 }
 
+#nomeAtividade {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+
 #contador {
     font-size: 50px;
+    font-weight: bold;
+}
+
+#etapa {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tomato {
+    margin: auto;
+    border-radius: 100px 100px;
+    background-color: rgb(218, 68, 63);
+    height: 300px;
+    width: 300px;
+  }
+
+.leaf { 
+    width: 100px; height: 100px;
+    background-color: #243304; 
+    -moz-border-radius: 100px 0px;
+    -webkit-border-radius: 100px 0px;
+    border-radius: 100px 0px;
+    margin-left: 550px;
+  }
+
+.invisivel {
+	display: none;
+}
+
+th {
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    color: white;
+    font-weight: bold;
 }
