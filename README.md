@@ -16,7 +16,7 @@
 ## :tomato: About :clock1:
 
 <div>
-In our studies we need to have the maximum concentration. Pomodoro's technique is to maintain that focus for a certain time, then this app will help you to achieve that focus.
+In our studies we need to have the maximum of concentration. Pomodoro's technique is to maintain that focus for a certain time, then this app will help you to achieve that focus.
 </div>
 
 
