@@ -13,7 +13,7 @@
   <a href="#information-source-how-to-use">How to Use</a>
 </p>
 
-## :tomato: About
+## :tomato: About :clock1:
 
 <div>
 In our studies we need to have the maximum concentration. Pomodoro's technique is to maintain that focus for a certain time, then this app will help you to achieve that focus.
