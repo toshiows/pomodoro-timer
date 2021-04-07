@@ -24,5 +24,9 @@ In our studies we need to have the maximum concentration. Pomodoro's technique i
 ![](https://i.imgur.com/6AoZ2bY.png?1)
 
 ## :hammer:	Technologies
+This project was developed with these technologies:
+- [Typescript](https://www.typescriptlang.org/)
+- [Html5]()
+- [Bootstrap](https://getbootstrap.com/)
 
 ## :question: How to use
