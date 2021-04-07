@@ -30,3 +30,11 @@ This project was developed with these technologies:
 - [Bootstrap](https://getbootstrap.com/)
 
 ## :question: How to use
+Clone this repo into the directory you want to use for your new project, install dependencies and build project:
+
+```$ git clone https://github.com/toshiows/pomodoro-timer.git <your project directory>
+$ cd <your project directory>
+$ npm install
+$ npm run build
+$ npm start
+```
