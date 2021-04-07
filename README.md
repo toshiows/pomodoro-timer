@@ -21,6 +21,7 @@ In our studies we need to have the maximum concentration. Pomodoro's technique i
 
 
 ## :eyeglasses: Preview
+![](https://i.imgur.com/6AoZ2bY.png?1)
 
 ## :hammer:	Technologies
 
