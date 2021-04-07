@@ -34,7 +34,7 @@ Clone this repo into the directory you want to use for your new project, install
 
 ```$ git clone https://github.com/toshiows/pomodoro-timer.git <your project directory>
 $ cd <your project directory>
-$ npm install
-$ npm run build
+$ npm install typescript@2.3.2 --save-dev
+$ npm run compile
 $ npm start
 ```
