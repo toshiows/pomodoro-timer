@@ -28,6 +28,7 @@ This project was developed with these technologies:
 - [Typescript](https://www.typescriptlang.org/)
 - [Html5]()
 - [Bootstrap](https://getbootstrap.com/)
+- [CSS3](https://www.w3schools.com/css/)
 
 ## :question: How to use
 Clone this repo into the directory you want to use for your new project, install dependencies and build project:
